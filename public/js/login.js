@@ -1,17 +1,18 @@
+// Console
+window.addEventListener("load", () => {
+  const fieldEmail = document.getElementById('e-mail');
+  const fieldPassword = document.getElementById('password');
 
+  fieldEmail.addEventListener('focus', () => {
+    console.log("funcionando campo1");
+  });
 
-//window.onload = function () {
- //   let fieldEmail = document.getElementById('e-mail');
- //   let fieldPassword = document.getElementById('password');
+  fieldPassword.addEventListener('focus', () => {
+      console.log("funcionando campo2");
+  });
+});
 
-  //  fieldEmail.addEventListener('focus', function () {
-  //      console.log("funcionando campo");
+// Prevent form default behaviour
+const form = document.querySelector(".login__form");
 
-
- //       fieldPassword.addEventListener('focus', function () {
-  //          console.log("funcionando campo");
-   //     });
- //   });
-//
-
-
+form.addEventListener("submit", (e) => e.preventDefault());

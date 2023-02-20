@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+    
     <!--Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!--CSS-->
-    <link rel="stylesheet" href="public/css/login.css">
+    <link rel="stylesheet" href="public/css/cart.css">
     <link rel="stylesheet" href="public/css/main.css">
 </head>
 <body>
@@ -59,25 +59,64 @@
     <!--end HEADER-->
 
     <!--MAIN-->
-    <main id="login" class="login">        
-            <div class="login__container">
-                <form action="" method="post" class="login__form">
-                    <h2 class="login__title">Faça seu login!</h2>
+    <main id="cart">
+        <section class="cart">
+            <h1 class="cart__title">Carrinho de Compras</h1>
 
-                    <div class="login__inputs">
-                        <label for="e-mail">E-mail</label>
-                        <input type="e-mail" id="e-mail" name="e-mail">
-                        
-                        <label for="password">Senha</label>                        
-                        <input type="password" id="password" name="password">
+            <article class="cart__description">
+                <figure class="cart__description__image">
+                    <img src="public/img/bottles/1-barone-montalto.png" alt="Vinho">
+                </figure>
+                
+                <div class="cart__description__text">
+                    <h2 class="cart__subtitle">Barone Montalto</h2>
 
-                        <input type="submit" id="submit" name="submit">
-                    </div>                    
+                    <h2 class="cart__price">Preço: R$
+                        <span class="product__price__item">77.80</span>
+                    </h2>
+
+                    <h2 class="cart__delivery">Entrega:
+                        <span class="cart__delivery__days">5 a 7 dias úteis</span>
+                    </h2>
+
+                    <h2 class="cart__delivery">Valor do frete:
+                        <span class="cart__delivery__value">Grátis</span>
+                    </h2>
+
+                    <h2 class="cart__price">Valor total: R$
+                        <span class="cart__price_total">77.80</span>
+                    </h2>
                 </div>
-            </form>
+            </article>
+
+            <article class="cart__buttons">
+                <button class="cart__buttons__subtract">
+                    <i class="fa-solid fa-minus fa-2x"></i>
+                </button>
+
+                <span class="cart__buttons__quantity">1</span>
+
+                <button class="cart__buttons__add">
+                    <i class="fa-solid fa-plus fa-2x"></i>
+                </button>
+                
+                <button class="cart__buttons__remove">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </button>
+            </article>
+
+            <article class="cart__resume">
+                <button class="cart__resume__back" onclick="window.location.href='/product-selected.html'">
+                    Voltar para produtos
+                </button>
+                <!-- <a href="product-selected.html">Voltar para produtos</a> -->
+
+                <button class="cart__resume__final">Finalizar a compra</button>
+            </article>
+        </section>
 
         <!--Link to Top-->
-        <a class="link-top" href="#login"><i class="fas fa-arrow-up"></i></a>
+        <a class="link-top" href="#cart"><i class="fas fa-arrow-up"></i></a>
     </main>
     <!--end MAIN-->
 
@@ -85,21 +124,18 @@
     <footer class="footer">
         <div class="footer__top">
             <div class="footer__top__map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111504.06928210588!2d-51.5877516386636!3d-29.14987091181183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c3b525635c503%3A0x903e94cea10ccfe6!2sBento%20Gon%C3%A7alves%2C%20RS%2C%2095700-000!5e0!3m2!1spt-BR!2sbr!4v1665773995807!5m2!1spt-BR!2sbr"
-                    width="100%" height="300" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111504.06928210588!2d-51.5877516386636!3d-29.14987091181183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c3b525635c503%3A0x903e94cea10ccfe6!2sBento%20Gon%C3%A7alves%2C%20RS%2C%2095700-000!5e0!3m2!1spt-BR!2sbr!4v1665773995807!5m2!1spt-BR!2sbr" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="footer__top__details">
                 <div class="footer__details__contact">
                     <h3>Contato</h3>
                     <span>contato@loja.winehouse.com.br</span>
-                    
-                    <div class="footer__contact__whatsapp">
+                    <div class="footer__contact__whatsapp">                        
                         <span class="pulse-phone">
                             <i class="fab fa-whatsapp" aria-hidden="true"></i>
                         </span>
+                        
                         <span>(54) 99427-XXXX</span>
                     </div>
                 </div>
@@ -125,7 +161,6 @@
             </div>
         </div>
 
-        <!--Horizontal Line-->
         <hr class="footer__line">
 
         <div class="footer__bottom">
@@ -136,12 +171,12 @@
     </footer>
     <!--end FOOTER-->
 
-    <!--JavaScript-->
+    <!--JAVASCRIPT-->
     <!--Main-->
     <script src="public/js/main.js"></script>
 
-    <!--Login-->
-    <script src="public/js/login.js"></script>
-    <!--end JavaScript-->
+    <!--Shop-->
+    <script src="public/js/shop.js"></script>
+    <!--end JAVASCRIPT-->
 </body>
 </html>
