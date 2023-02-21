@@ -1,3 +1,8 @@
+#user-icon {
+    color: var(--cor-vinho-verde);
+    transform: scale(1.05);
+}
+
 main {
     margin-bottom: -1rem;
 }

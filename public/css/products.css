@@ -121,13 +121,13 @@
     transition: all .5s;
 }
 
+/**MEDIA QUERIES**/
 @media(max-width: 900px) {
     .products__item {
         grid-template-rows: 1fr 70px;
     }
 }
 
-/**MEDIA QUERIES**/
 @media(max-width: 800px) {
     .products__content {
         flex-wrap: wrap;
