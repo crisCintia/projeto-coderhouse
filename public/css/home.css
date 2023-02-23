@@ -226,7 +226,8 @@
 .promotion__item__image img {
     display: block;
     width: 100%;
-    max-height: 390px;
+    max-height: 412px;
+    min-height: 300px;
     border-radius: 7px 7px 0 0;
     transition: all .5s;
 }
@@ -256,7 +257,7 @@
     font-weight: 600;
 }
 
-.promotion__item__btn {
+/* .promotion__item__btn {
     margin: .9rem 0;
     padding: .5rem 1.2rem;
     border-radius: 5px;
@@ -271,7 +272,7 @@
 .promotion__item__btn:hover {
     color: var(--cor-preta);
     border: 1px solid var(--cor-preta);
-}
+} */
 
 /**SECTION RELEASE**/
 .release {
@@ -310,7 +311,8 @@
 .release__item__image img {
     display: block;
     width: 100%;
-    max-height: 390px;
+    max-height: 412px;
+    min-height: 300px;
     border-radius: 7px 7px 0 0;
     transition: all .5s;
 }
@@ -342,7 +344,7 @@
     transition: all .5s;
 }
 
-.release__item__btn {
+/* .release__item__btn {
     font-size: 1.4rem;
     font-weight: 600;
     padding: .55rem 1.3rem;
@@ -356,7 +358,7 @@
 }
 .release__item__btn:hover {
     background: rgb(153, 72, 103);
-}
+} */
 
 /**SECTION CURIOSITY**/
 .curiosity {    
@@ -498,7 +500,6 @@
 }
 
 /**MEDIA QUERIES**/
-/* Curiosity */
 @media(min-width: 1800px) {
     .curiosity__content {
         justify-content: space-evenly;
@@ -538,7 +539,6 @@
 }
 
 @media(max-width: 800px) {
-    /*Mission*/
     .mission__content {
         flex-wrap: wrap;
     }
@@ -547,7 +547,6 @@
         flex-basis: 48%;
     }
 
-    /*Promotion*/
     .promotion__content {
         flex-wrap: wrap;
     }
@@ -556,14 +555,12 @@
         flex-basis: 48%;
     }
 
-    /*Release*/
     .release__content {
         grid-template-columns: repeat(2, 48%);
     }
 }
 
 @media(max-width: 600px) {
-    /* Curiosity */
     .curiosity-wrapper {
         flex-basis: 75%;
     }
@@ -583,12 +580,10 @@
 }
 
 @media(max-width: 500px) {
-    /*Mission*/
     .mission__content__item {
         flex-basis: 96%;
     }
 
-    /*Promotion*/
     .promotion__content {
         justify-content: center;
     }
@@ -597,7 +592,6 @@
         flex-basis: 90%;
     }
 
-    /*Release*/
     .release__content {
         grid-template-columns: 90%;
         justify-content: center;
@@ -605,14 +599,12 @@
 }
 
 @media(max-width: 450px) {
-    /* Curiosity */
     .curiosity-wrapper {
         flex-basis: 85%;
     }
 }
 
 @media(max-width: 330px) {
-    /* Curiosity */
     .curiosity-wrapper {
         flex-basis: 100%;
     }
