@@ -28,11 +28,22 @@
     color: var(--cor-vinho-escuro);
 }
 
-.products__wines {
-    flex-basis: 92%;
+.products__categories__link a.active {
+    color: var(--cor-vinho-escuro);
 }
 
-.products__content {
+.products__gallery {
+    flex-basis: 92%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    /* row-gap: 3rem; */
+    gap: 3rem;
+}
+
+/* .products__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,10 +53,10 @@
 
 .products__content:last-child {
     margin-bottom: 0;
-}
+} */
 
 .products__item {
-    flex-basis: 23%;
+    /* flex-basis: 23%; */
     border: 3px solid var(--cor-vinho-escuro);
     box-shadow: 0 0 8px var(--cor-rosa), 0 0 0 4px var(--cor-rosa), 0 0 0 4px var(--cor-rosa);
     border-radius: 10px;
@@ -128,14 +139,19 @@
     }
 }
 
-@media(max-width: 800px) {
-    .products__content {
+@media(max-width: 900px) {
+    /* .products__content {
         flex-wrap: wrap;
         gap: 3rem 1.8rem;
+    } */
+
+    .products__gallery {
+        justify-content: space-around;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .products__item {
-        flex-basis: 47%;
+        /* flex-basis: 45%; */
         grid-template-rows: 1fr 55px;
     }
 }
@@ -168,17 +184,18 @@
         margin-right: 0;
     }
     
-    .products__wines {
+    .products__gallery {
         flex-basis: 100%;
+        grid-template-columns: 85%;
     }
 
-    .products__content {
+    /* .products__content {
         justify-content: center;
-    }
+    } */
 
-    .products__item {
+    /* .products__item {
         flex-basis: 85%;
-    }
+    } */
 
     .products__item__image img {
         width: calc(80px + 2vw);

@@ -60,22 +60,23 @@
 
     <!--MAIN-->
     <main id="products">
-        <!--Prdutos-->
+        <!--Produtos-->
         <section class="products">
             <aside class="products__categories">                
                 <h2 class="products__categories__title">Categorias</h2>                
 
                 <ul class="products__categories__links">
-                    <li class="products__categories__link"><a href="">Tinto</a></li>
-                    <li class="products__categories__link"><a href="">Branco</a></li>
-                    <li class="products__categories__link"><a href="">Rose</a></li>
-                    <li class="products__categories__link"><a href="">Espumante</a></li>
+                    <li class="products__categories__link"><a href="" class="active" data-filter="all">Todos</a></li>
+                    <li class="products__categories__link"><a href="" data-filter="red">Tinto</a></li>
+                    <li class="products__categories__link"><a href="" data-filter="white">Branco</a></li>
+                    <li class="products__categories__link"><a href="" data-filter="rose">Rose</a></li>
+                    <li class="products__categories__link"><a href="" data-filter="sparkling">Espumante</a></li>
                 </ul>
             </aside>
 
-            <div class="products__wines">
-                <div class="products__content">
-                    <article class="products__item">
+            <div class="products__gallery">
+                <!-- <div class="products__content"> -->
+                    <article class="products__item red">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/1-barone-montalto.png" alt="Vinho Tinto">
@@ -92,7 +93,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item red">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/2-corralillo.png" alt="Vinho Tinto">
@@ -109,7 +110,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item white">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/3-vistamar-brisa.png" alt="Vinho Branco">
@@ -126,7 +127,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item white">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/4-rio-flor.png" alt="Vinho Branco">
@@ -142,10 +143,10 @@
                             <span class="products__item__size">R$ 80,50</span>
                         </footer>
                     </article>
-                </div>
+                <!-- </div> -->
 
-                <div class="products__content">
-                    <article class="products__item">
+                <!-- <div class="products__content"> -->
+                    <article class="products__item rose">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/5-estandon.png" alt="Vinho Rose">
@@ -163,7 +164,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item rose">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/6-tramari.png" alt="Vinho Rose">
@@ -180,7 +181,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item sparkling">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/7-victoria-geisse.png" alt="Espumante">
@@ -197,7 +198,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item sparkling">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/8-gramona-cuvee.png" alt="Espumante">
@@ -213,10 +214,10 @@
                             <span class="products__item__size">R$ 75,80</span>
                         </footer>
                     </article>
-                </div>
+                <!-- </div> -->
 
-                <div class="products__content">
-                    <article class="products__item">
+                <!-- <div class="products__content"> -->
+                    <article class="products__item red">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/9-patrick-clerget.png" alt="Vinho Tinto">
@@ -234,9 +235,9 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item red">
                         <header>
-                            <figure class="products__item__image">
+                            <figure class="products__item__image red">
                                 <img src="public/img/bottles/10-barone-montalto.png" alt="Vinho Tinto">
                             </figure>
 
@@ -251,7 +252,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item white">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/11-valladodouro.png" alt="Vinho Branco">
@@ -268,7 +269,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item white">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/12-leyda-reserva.png" alt="Vinho Branco">
@@ -284,10 +285,10 @@
                             <span class="products__item__size">R$ 78,00</span>
                         </footer>
                     </article>
-                </div>
+                <!-- </div> -->
 
-                <div class="products__content">
-                    <article class="products__item">
+                <!-- <div class="products__content"> -->
+                    <article class="products__item sparkling">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/13-henri-leblanc.png" alt="Espumante">
@@ -305,7 +306,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item sparkling">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/14-gramona-imperial.png" alt="Espumante">
@@ -322,7 +323,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item rose">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/15-stardust.png" alt="Vinho Rose">
@@ -339,7 +340,7 @@
                         </footer>
                     </article>
 
-                    <article class="products__item">
+                    <article class="products__item rose">
                         <header>
                             <figure class="products__item__image">
                                 <img src="public/img/bottles/16-lumière.png" alt="Vinho Rose">
@@ -355,9 +356,10 @@
                             <span class="products__item__size">R$ 88,00</span>
                         </footer>
                     </article>
-                </div>
+                <!-- </div> -->
             </div>
         </section>
+        <!--end Products-->
 
         <!--Link to Top-->
         <a class="link-top" href="#products"><i class="fas fa-arrow-up"></i></a>
@@ -417,7 +419,11 @@
     <!--end FOOTER-->
 
     <!--JavaScript-->
+    <!--Main-->
     <script src="public/js/main.js"></script>
+
+    <!--Products-->
+    <script src="public/js/products.js"></script>
     <!--end JavaScript-->
 </body>
 </html>
