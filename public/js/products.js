@@ -86,3 +86,23 @@ for(const item of productsArray) {
     console.log(item);
     item.convertType();
 }
+
+//*************************************************************************************************************//
+console.log("\n");
+
+// Métodos de busca e filtragem sobre o Array
+// Exemplo para mostrar o nome dos produtos
+const filterName = productsArray.map((item) => item.name);
+console.log(filterName);
+
+// Exemplo para buscar os produtos do tipo "tinto"
+const filterType = productsArray.filter((item) => item.type === "tinto");
+console.log(filterType);
+
+// Exemplo para buscar os produtos com preço superior a R$ 90
+const filterPrice = productsArray.filter((item) => item.price > 90);
+console.log(filterPrice);
+
+// Exemplo para mostrar o valor total dos produtos
+const totalPrice = productsArray.reduce((accumulator, item) => accumulator + item.price, 0);
+console.log(`Valor total dos produtos: R$ ${totalPrice}`);
