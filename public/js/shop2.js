@@ -2,10 +2,12 @@ const wineName = document.querySelector(".cart__subtitle");
 const winePrice = document.querySelector(".product__price__item");
 const totalPrice = document.querySelector(".cart__price_total");
 
+//Entrada do usuário para modificar o HTML
 let name = prompt("Qual o nome do vinho?");
 let price = prompt("Qual o valor do vinho?");
 let quantity = prompt("Qual a quantidade de vinhos?");
 
+// Criando Objetos com método construtor a partir de uma classe
 class product {
     constructor(name, price, quantity) {
         this.name = name;
@@ -15,11 +17,13 @@ class product {
 
     printTotalValue() {
         let change = Number(price.replace(',', '.'));
+        // Nome do vinho
         wineName.innerHTML = this.name;
         winePrice.innerHTML = change.toFixed(2).toString().replace('.', ',');
 
         let mult = change * this.quantity;
         let totalField = mult.toFixed(2).toString().replace('.', ',');
+        // Valor total
         totalPrice.textContent = totalField;
     }
 }
