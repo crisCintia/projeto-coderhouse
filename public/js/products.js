@@ -106,3 +106,10 @@ console.log(filterPrice);
 // Exemplo para mostrar o valor total dos produtos
 const totalPrice = productsArray.reduce((accumulator, item) => accumulator + item.price, 0);
 console.log(`Valor total dos produtos: R$ ${totalPrice}`);
+
+//Adicionando evento ao mouse
+const button = document.getElementsByClassName("products__item__buy")
+button.addEventListener("click", (event) => {
+    button.textContent = `Click count: ${event.detail}`
+    alert("Produto adicionado ao carrinho")
+})
